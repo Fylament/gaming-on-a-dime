@@ -10,10 +10,18 @@ $primary-invert: $kaldi-red-invert
 $body-color: #333
 $black: #2b2523
 
+body
+  background-color: #ffffff
+
+.post-title
+  text-decoration: none !important
+  color: #ffffff 
+
 .navbar .navbar-menu
   box-shadow:none !important
 
 .content .taglist
+  background-color: #000
   list-style: none
   margin-bottom: 0
   margin-left: 0
@@ -121,6 +129,8 @@ $menu-label-color: $white-ter
 .blog-list-item .featured-thumbnail
   flex-basis: 35%;
   margin: 0 1.5em 0 0;
+  max-width: 70%;
+  max-height: 30%
 
 
 @import "~bulma"
