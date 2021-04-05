@@ -15,7 +15,7 @@ class BlogRoll extends React.Component {
             posts.map(({ node: post }) => (
               <div className="" key={post.id}>
                 <article
-                  className={`blog-list-item tile is-child box notification ${
+                  className={`blog-list-item tile is-child box-post  ${
                     post.frontmatter.featuredpost ? 'is-featured' : ''
                   }`}
                 >
@@ -37,7 +37,17 @@ class BlogRoll extends React.Component {
                       >
                         {post.frontmatter.title}
                       </Link>
+                      <div className="post-date">
+                        {post.frontmatter.date}
+                      </div>
+                      <div className="post-date">
+                        <p>
+                          <br></br>
+                          {post.frontmatter.description}
+                        </p>
+                      </div>
                     </p>
+                    
                   </header>
                 </article>
               </div>
@@ -126,8 +136,9 @@ export default () => (
               }
               frontmatter {
                 title
+                description
                 templateKey
-                date(formatString: "MMMM DD, YYYY")
+                date(formatString: "MMMM D, YYYY")
                 featuredpost
                 featuredimage {
                   childImageSharp {
