@@ -1,9 +1,8 @@
 ---
 templateKey: blog-post
-title: "Just in: small batch of Jamaican Blue Mountain in store next week"
+title: "Bethesda reveals Wyrmspire: 2nd expansion for The Elder Scrolls V"
 date: 2017-01-04T15:04:10.000Z
-description: We’re proud to announce that we’ll be offering a small batch of
-  Jamaica Blue Mountain coffee beans in our store next week.
+description: Shit's about to get real.
 featuredpost: false
 featuredimage: /img/370157.jpg
 tags:
