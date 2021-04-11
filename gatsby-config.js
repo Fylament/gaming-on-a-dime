@@ -76,8 +76,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `ubuntu`,
-          `lora` // you can also specify font weights and styles
+          `oswald`,
+          `open sans` // you can also specify font weights and styles
         ],
         display: 'swap'
       }

@@ -1,27 +1,102 @@
 @import "~bulma/sass/utilities/initial-variables"
 
 // Config vars
-// Kaldi logo brand color: #FD461E
-$kaldi-red: #D64000
+$bg: #000814
+$primary: #ffc300 
 $kaldi-red-invert: #fff
 
-$primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 $body-color: #333
 $black: #2b2523
 
 body
-  background-color: #ffffff
+  background-color: $bg !important
 
-.box-post
-  color: #4a4a4a
-  display: block
-  padding: 1.25rem
-  border-bottom: 1px solid #e3e3e3
+.featured-bg 
+  height: 100% !important
+  overflow: hidden !important
+
+
+
+.featured-bg div
+  border-radius: 0 !important
+  height: 100% !important
+  background: -webkit-linear-gradient(transparent, $bg) left repeat;
+  background: linear-gradient(transparent, $bg) left repeat; 
+
+.featured
+  height: 500px !important
+
+.featured-post
+  text-align: center !important
+  margin: 0 auto !important
+
+.featured-post h1
+  position: relative !important
+  top: 70%
+  font-family: oswald !important
+  color: $primary !important
+
+.featured-post h3
+  position: relative !important
+  top: 70%
+  font-size: 0.75rem !important
+  font-family: open sans !important
+  color: #fff !important
+
+.content-container p
+  font-family: open sans !important
+  color: #fff !important
+
+.navbar
+  background-color: $bg !important
+
+.navbar-item
+  color: #fff !important
+  font-family: open sans !important
+  font-size: 10px !important
+
+.section-label
+  font-size: 9px
+  margin-bottom: 1rem
+
+
+.sidebar-post
+  margin: auto
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, .1)
+  margin-bottom: 1rem
+  padding: 1rem
+
+.trending-thumbnail div
+  border-radius: 0 !important
+
+.trending-thumbnail
+  margin-bottom: 0.75rem
+
+.sidebar-post p
+  font-family: oswald !important
+  font-size: 9px !important
 
 .post-title
+  font-family: oswald !important
+  font-size: 9px !important
+  color: $primary !important
   text-decoration: none !important
-  color: #ffffff 
+
+.post-date
+  font-family: open sans !important
+  font-size: 10px !important
+
+.post-description p
+  margin-top: 1rem
+  font-family: open sans !important
+  font-size: 14px !important
+
+.box-post
+  color: #fff
+  display: block
+  padding: 1.25rem
+  border-bottom: 1px solid #001d3d
 
 .post-meta
   width: 80%
@@ -131,11 +206,12 @@ $menu-label-color: $white-ter
 
 // blog roll
 .blog-list-item header
-  display: flex;
-  margin-bottom: 1em;
+  display: flex
+  margin-bottom: 1em
 .blog-list-item .featured-thumbnail
-  flex-basis: 35%;
-  margin: 0 1.5em 0 0;
+  flex-basis: 35%
+  margin: 0 1.5em 0 0
+  height: 100%
 
 
 @import "~bulma"

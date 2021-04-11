@@ -11,6 +11,7 @@ class BlogRoll extends React.Component {
     return (
       <div className="columns">
         <div className="column is-multiline">
+        <span className= "section-label">Latest</span>
         {posts &&
             posts.map(({ node: post }) => (
               <div className="" key={post.id}>
@@ -40,9 +41,8 @@ class BlogRoll extends React.Component {
                       <div className="post-date">
                         {post.frontmatter.date}
                       </div>
-                      <div className="post-date">
+                      <div className="post-description">
                         <p>
-                          <br></br>
                           {post.frontmatter.description}
                         </p>
                       </div>

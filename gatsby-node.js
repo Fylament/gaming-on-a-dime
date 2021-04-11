@@ -2,6 +2,7 @@ const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
+const { paginate } = require('gatsby-awesome-pagination')
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
@@ -29,8 +30,18 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
+  
+
     const posts = result.data.allMarkdownRemark.edges
 
+    paginate({
+      createPage,
+      items: posts,
+      itemsPerPage: 3,
+      pathPrefix: '/news',
+      component: path.resolve('src/templates/news.js')
+    });
+    
     posts.forEach((edge) => {
       const id = edge.node.id
       createPage({
@@ -45,7 +56,7 @@ exports.createPages = ({ actions, graphql }) => {
         },
       })
     })
-
+    
     // Tag pages:
     let tags = []
     // Iterate through each post, putting all found tags into `tags`

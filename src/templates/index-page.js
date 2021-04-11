@@ -4,6 +4,8 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
+import Featured from '../components/Featured'
+import Trending from '../components/Trending'
 
 export const IndexPageTemplate = ({
   image,
@@ -13,7 +15,7 @@ export const IndexPageTemplate = ({
   description,
 }) => (
   <div>
-    <div
+    {/* <div
       className="full-width-image margin-top-0"
       style={{
         backgroundImage: `url(${
@@ -60,14 +62,15 @@ export const IndexPageTemplate = ({
           {subheading}
         </h3>
       </div>
-    </div>
+    </div> */}
+    <Featured/>
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
           <div className="columns">
             <div className="column is-12 ">
               <div className="content columns">
-                <div className="column is-9">
+                <div className="column is-8">
                   
                   <BlogRoll />
                   {/* <div className="column is-12 has-text-centered">
@@ -77,8 +80,8 @@ export const IndexPageTemplate = ({
                   </div> */}
                 </div>
  
-                <div className='column is-3'>
-                  a
+                <div className='column is-4'>
+                  <Trending />
                 </div>
               </div>
             </div>
