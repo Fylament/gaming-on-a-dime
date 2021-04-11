@@ -3,7 +3,7 @@ templateKey: blog-post
 title: "Bethesda reveals Wyrmspire: 2nd expansion for The Elder Scrolls V"
 date: 2017-01-04T15:04:10.000Z
 description: Shit's about to get real.
-featuredpost: false
+featuredpost: true
 featuredimage: /img/370157.jpg
 tags:
   - jamaica
