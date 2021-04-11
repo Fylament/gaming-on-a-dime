@@ -1,0 +1,19 @@
+---
+templateKey: news-post
+title: Stadia Announces Their Comeback in August 2030
+date: 2021-04-11T10:52:38.317Z
+description: 5G towers bringing the cloud gaming service back to the plate.
+featuredpost: true
+featuredimage: /img/stadia.jpg
+tags:
+  - cloud
+---
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit diam lorem, non ornare nunc mollis faucibus. Nunc quis nisi eget est dignissim sodales. Donec pellentesque dignissim est, eget mollis quam dictum a. Morbi elementum placerat venenatis. Integer consectetur eros dapibus, sodales nunc at, volutpat quam. Etiam posuere eleifend enim, et vestibulum risus pellentesque et. Suspendisse eu ipsum suscipit, iaculis arcu in, accumsan sapien. Suspendisse nec luctus diam, eu laoreet enim. Maecenas dictum maximus maximus. Morbi vitae neque placerat, ultricies arcu quis, accumsan turpis. Vivamus quis placerat nulla. Sed id pellentesque massa. Vestibulum pharetra lacus sed massa convallis, ac volutpat neque aliquet.
+
+Mauris a quam mattis, suscipit nunc non, viverra lectus. Nulla interdum posuere libero, eu aliquet nulla hendrerit eget. Cras sollicitudin, odio ut cursus porttitor, libero justo pharetra diam, vitae bibendum quam mauris et nunc. Sed et tempor metus, at congue est. Ut consequat vulputate auctor. Suspendisse in lorem ac est finibus blandit vitae id turpis. Aliquam accumsan nisi condimentum arcu finibus, ac blandit orci viverra. Suspendisse auctor est nec ex ornare, et sagittis nisl fringilla. In risus libero, vulputate non eros eget, venenatis vehicula nunc. Donec vitae felis ac quam viverra porttitor at eget velit. Ut rutrum faucibus posuere. Donec dapibus in turpis vel tincidunt. Sed nulla nibh, viverra at condimentum non, bibendum in lectus. Curabitur vitae sodales erat. Pellentesque non suscipit sem.
+
+Praesent sit amet feugiat risus, malesuada sagittis lectus. Integer porta dui magna, ac auctor odio sollicitudin eget. Nulla id enim sit amet nisl tristique ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec vitae auctor quam. Curabitur pharetra dolor nec nulla dignissim porta. Donec quis ex eu nibh auctor tincidunt a egestas lacus. Sed pharetra aliquet massa in tincidunt. Aliquam erat volutpat. Suspendisse aliquet arcu vitae lacinia commodo. Sed eu libero diam. Nam hendrerit vitae justo eu ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent vitae purus leo. Nunc ac enim maximus, dapibus tellus non, ultricies enim. Duis scelerisque nec lorem ac pharetra.
+
+Pellentesque ut pellentesque eros, ut suscipit arcu. Aliquam suscipit neque eget nisi scelerisque imperdiet. Fusce tempus, lorem vitae lobortis volutpat, nibh nibh dignissim ligula, et egestas mauris enim vel nunc. Ut nulla risus, euismod sit amet nisi at, hendrerit malesuada urna. Fusce vehicula tortor nec arcu congue, eu consectetur sapien rutrum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+Fusce turpis ligula, egestas quis posuere egestas, convallis ullamcorper ligula. Nunc non porttitor eros, vitae finibus felis. Quisque id metus diam. Morbi ac nisi lorem. Donec dictum dignissim sodales. Nulla pulvinar tempus volutpat. Donec scelerisque sapien ac nisl pretium viverra. Sed mollis velit lorem, eget mattis justo eleifend sed. Nunc neque velit, pulvinar non nunc vel, vehicula commodo tellus. Pellentesque fringilla sagittis tellus, eu imperdiet orci dictum venenatis.
