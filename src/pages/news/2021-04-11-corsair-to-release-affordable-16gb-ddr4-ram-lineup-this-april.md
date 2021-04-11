@@ -4,7 +4,7 @@ title: Corsair to Release Affordable 16GB DDR4 RAM Lineup this April
 date: 2021-04-11T10:55:41.331Z
 description: Price starts at as low as $50
 featuredpost: false
-featuredimage: /img/20201104.webp
+featuredimage: /img/untitled-design.jpg
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit diam lorem, non ornare nunc mollis faucibus. Nunc quis nisi eget est dignissim sodales. Donec pellentesque dignissim est, eget mollis quam dictum a. Morbi elementum placerat venenatis. Integer consectetur eros dapibus, sodales nunc at, volutpat quam. Etiam posuere eleifend enim, et vestibulum risus pellentesque et. Suspendisse eu ipsum suscipit, iaculis arcu in, accumsan sapien. Suspendisse nec luctus diam, eu laoreet enim. Maecenas dictum maximus maximus. Morbi vitae neque placerat, ultricies arcu quis, accumsan turpis. Vivamus quis placerat nulla. Sed id pellentesque massa. Vestibulum pharetra lacus sed massa convallis, ac volutpat neque aliquet.
 
