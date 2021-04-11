@@ -4,7 +4,7 @@ title: Recommended Gaming Headphones on a Dime - Q1 2021
 date: 2021-04-11T11:07:23.392Z
 description: Check out the best cheap headphones you can buy right now
 featuredpost: true
-featuredimage: /img/nyrfs8hcdyaahkfgfnzrpi-970-80.jpeg.webp
+featuredimage: /img/best-cheap-wireless-headphones-medium.jpg
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit diam lorem, non ornare nunc mollis faucibus. Nunc quis nisi eget est dignissim sodales. Donec pellentesque dignissim est, eget mollis quam dictum a. Morbi elementum placerat venenatis. Integer consectetur eros dapibus, sodales nunc at, volutpat quam. Etiam posuere eleifend enim, et vestibulum risus pellentesque et. Suspendisse eu ipsum suscipit, iaculis arcu in, accumsan sapien. Suspendisse nec luctus diam, eu laoreet enim. Maecenas dictum maximus maximus. Morbi vitae neque placerat, ultricies arcu quis, accumsan turpis. Vivamus quis placerat nulla. Sed id pellentesque massa. Vestibulum pharetra lacus sed massa convallis, ac volutpat neque aliquet.
 
