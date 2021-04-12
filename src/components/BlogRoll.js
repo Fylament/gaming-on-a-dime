@@ -125,7 +125,7 @@ export default () => (
       query BlogRollQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+          filter: { frontmatter: { templateKey: { in: ["blog-post", "guides-post", "review-post", "news-post"] } } }
         ) {
           edges {
             node {

@@ -41,6 +41,30 @@ exports.createPages = ({ actions, graphql }) => {
       pathPrefix: '/news',
       component: path.resolve('src/templates/news.js')
     });
+
+    paginate({
+      createPage,
+      items: posts,
+      itemsPerPage: 3,
+      pathPrefix: '/blog',
+      component: path.resolve('src/templates/blog.js')
+    });
+
+    paginate({
+      createPage,
+      items: posts,
+      itemsPerPage: 3,
+      pathPrefix: '/reviews',
+      component: path.resolve('src/templates/reviews.js')
+    });
+
+    paginate({
+      createPage,
+      items: posts,
+      itemsPerPage: 3,
+      pathPrefix: '/guides',
+      component: path.resolve('src/templates/guides.js')
+    });
     
     posts.forEach((edge) => {
       const id = edge.node.id

@@ -4,14 +4,14 @@ import { Link, graphql,StaticQuery } from 'gatsby'
 import Layout from '../components/Layout'
 import Pager from '../components/Pager'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
-import FeaturedNews from '../components/featured/FeaturedNews'
+import FeaturedGuides from '../components/featured/FeaturedGuides'
 import Trending from '../components/Trending'
 
-const News = ({data, pageContext}) => {
+const Guides = ({data, pageContext}) => {
   const { edges: posts } = data.allMarkdownRemark
     return(
       <Layout>
-      <FeaturedNews/>
+      <FeaturedGuides/>
       
       <section className="section section--gradient">
         <div className="container">
@@ -71,12 +71,12 @@ const News = ({data, pageContext}) => {
           </div>
         </div>
       </section>
-      </Layout>
+    </Layout>
     )
 };
 
 
-News.propTypes = {
+Guides.propTypes = {
     data: PropTypes.object.isRequired,
     pageContext: PropTypes.object.isRequired
 }
@@ -86,7 +86,7 @@ export const query = graphql`
   query ($skip : Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { templateKey: { eq: "news-post" } } }
+      filter: { frontmatter: { templateKey: { eq: "guides-post" } } }
       skip: $skip
       limit: $limit
     ) {
@@ -117,4 +117,4 @@ export const query = graphql`
   }
 `;
 
-export default News
+export default Guides

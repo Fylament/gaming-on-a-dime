@@ -2,13 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import BackgroundImage from 'gatsby-background-image'
-import PreviewCompatibleImage from './PreviewCompatibleImage'
+import PreviewCompatibleImage from '../PreviewCompatibleImage'
 
-class Featured extends React.Component {
+class FeaturedReview extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-
+    
     return (
         <div className="">
         {posts &&
@@ -119,7 +119,7 @@ class Featured extends React.Component {
   }
 }
 
-Featured.propTypes = {
+FeaturedReview.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -130,11 +130,11 @@ Featured.propTypes = {
 export default () => (
   <StaticQuery
     query={graphql`
-      query FeaturedQuery {
+      query FeaturedReviewQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
           limit: 1 
-          filter: { frontmatter: { templateKey: { eq: "blog-post" }, featuredpost: {eq: true} } }
+          filter: { frontmatter: { templateKey: { eq: "review-post" }} }
         ) {
           edges {
             node {
@@ -162,6 +162,6 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <Featured data={data} count={count} />}
+    render={(data, count) => <FeaturedReview data={data} count={count} />}
   />
 )

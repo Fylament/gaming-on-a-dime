@@ -4,7 +4,7 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
-import Featured from '../components/Featured'
+import Featured from '../components/featured/Featured'
 import Trending from '../components/Trending'
 
 export const IndexPageTemplate = ({
@@ -66,6 +66,7 @@ export const IndexPageTemplate = ({
     <Featured/>
     <section className="section section--gradient">
       <div className="container">
+      <h1>This site is under development. All articles provided in this site are fake, placeholder news for development purposes only.</h1>
         <div className="section">
           <div className="columns">
             <div className="column is-12 ">

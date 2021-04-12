@@ -1,52 +1,70 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
-import PreviewCompatibleImage from './PreviewCompatibleImage'
+import BackgroundImage from 'gatsby-background-image'
+import PreviewCompatibleImage from '../PreviewCompatibleImage'
 
-class Trending extends React.Component {
+class FeaturedBlog extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-
+    
     return (
-        <div className="sidebar-container is-multiline">
-        <span className="section-label">Trending</span>
-            {posts &&
+        <div className="">
+        {posts &&
             posts.map(({ node: post }) => (
               <div className="" key={post.id}>
-                <article
-                  className={`   ${
-                    post.frontmatter.featuredpost ? 'is-featured' : ''
-                  }`}
-                >
-                  <div className= "sidebar-post">
-                    {post.frontmatter.featuredimage ? (
-                      <div className="trending-thumbnail">
-                        <PreviewCompatibleImage
-                          imageInfo={{
-                            image: post.frontmatter.featuredimage,
-                            alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                          }}
-                        />
+                  <div className=" margin-top-0 featured">
+                      <div className="featured-bg">
+                        <BackgroundImage
+                          fluid={post.frontmatter.featuredimage.childImageSharp.fluid}
+                        >
+                          <div className="featured-post"
+                              // style={{
+                              // display: 'flex',
+                              // height: '150px',
+                              // lineHeight: '1',
+                              // justifyContent: 'space-around',
+                              // alignItems: 'left',
+                              // flexDirection: 'column',
+                              // }}
+                          >
+                              <Link
+                                to={post.fields.slug}
+                              >
+                                <h1
+                                className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-4-widescreen"
+                                // style={{
+                                //     boxShadow:
+                                //     'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
+                                //     backgroundColor: 'rgb(255, 68, 0)',
+                                //     color: 'white',
+                                //     lineHeight: '1',
+                                //     padding: '0.25em',
+                                // }}
+                                >
+                                {post.frontmatter.title}
+                                </h1>
+                              </Link>
+                              <h3
+                              className="is-size-5-mobile is-size-5-tablet"
+                              // style={{
+                              //     boxShadow:
+                              //     'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
+                              //     backgroundColor: 'rgb(255, 68, 0)',
+                              //     color: 'white',
+                              //     lineHeight: '1',
+                              //     padding: '0.25em',
+                              // }}
+                              >
+                              {post.frontmatter.description}
+                              </h3>
+                          </div>
+                        </BackgroundImage>
+                          
+                          </div>
                       </div>
-                    ) : null}
-                    <p className="">
-                      <Link
-                        className="title post-title has-text-primary is-size-5"
-                        to={post.fields.slug}
-                      >
-                        {post.frontmatter.title}
-                      </Link>
-                      <div className="post-date">
-                        {post.frontmatter.date}
-                      </div>
-                      <div className="post-date">
-                        
-                      </div>
-                    </p>
                     
-                  </div>
-                </article>
               </div>
             ))}
         </div>
@@ -101,7 +119,7 @@ class Trending extends React.Component {
   }
 }
 
-Trending.propTypes = {
+FeaturedBlog.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -112,12 +130,12 @@ Trending.propTypes = {
 export default () => (
   <StaticQuery
     query={graphql`
-      query TrendingQuery {
+      query FeaturedBlogQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: {  in: ["blog-post", "guides-post", "review-post", "news-post"]} } }
-          limit: 6
-          ) {
+          limit: 1 
+          filter: { frontmatter: { templateKey: { eq: "blog-post" }} }
+        ) {
           edges {
             node {
               excerpt(pruneLength: 400)
@@ -134,7 +152,7 @@ export default () => (
                 featuredimage {
                   childImageSharp {
                     fluid(quality: 100) {
-                      ...GatsbyImageSharpFluid
+                      ...GatsbyImageSharpFluid_withWebp_tracedSVG
                     }
                   }
                 }
@@ -144,6 +162,6 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <Trending data={data} count={count} />}
+    render={(data, count) => <FeaturedBlog data={data} count={count} />}
   />
 )
