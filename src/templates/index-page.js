@@ -14,6 +14,7 @@ export const IndexPageTemplate = ({
   subheading,
   description,
 }) => (
+  
   <div>
     {/* <div
       className="full-width-image margin-top-0"
