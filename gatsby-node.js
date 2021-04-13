@@ -9,7 +9,76 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
+      articles:
       allMarkdownRemark(limit: 1000) {
+          edges {
+            node {
+              id
+              fields {
+                slug
+              }
+              frontmatter {
+                tags
+                templateKey
+              }
+            }
+          }
+      }
+      posts:
+      allMarkdownRemark(limit: 1000
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+      ) {
+        edges {
+          node {
+            id
+            fields {
+              slug
+            }
+            frontmatter {
+              tags
+              templateKey
+            }
+          }
+        }
+      }
+      news:
+      allMarkdownRemark(limit: 1000
+      filter: { frontmatter: { templateKey: { eq: "news-post" } } }
+      ) {
+        edges {
+          node {
+            id
+            fields {
+              slug
+            }
+            frontmatter {
+              tags
+              templateKey
+            }
+          }
+        }
+      }
+      guides:
+      allMarkdownRemark(limit: 1000
+      filter: { frontmatter: { templateKey: { eq: "news-post" } } }
+      ) {
+        edges {
+          node {
+            id
+            fields {
+              slug
+            }
+            frontmatter {
+              tags
+              templateKey
+            }
+          }
+        }
+      }
+      reviews:
+      allMarkdownRemark(limit: 1000
+      filter: { frontmatter: { templateKey: { eq: "news-post" } } }
+      ) {
         edges {
           node {
             id
@@ -30,14 +99,17 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-  
-
-    const posts = result.data.allMarkdownRemark.edges
+    
+    const articles  = result.data.articles.edges
+    const posts = result.data.posts.edges
+    const news = result.data.news.edges
+    const guides = result.data.guides.edges
+    const reviews = result.data.reviews.edges
 
     paginate({
       createPage,
-      items: posts,
-      itemsPerPage: 3,
+      items: news,
+      itemsPerPage: 10,
       pathPrefix: '/news',
       component: path.resolve('src/templates/news.js')
     });
@@ -45,28 +117,28 @@ exports.createPages = ({ actions, graphql }) => {
     paginate({
       createPage,
       items: posts,
-      itemsPerPage: 3,
-      pathPrefix: '/blog',
+      itemsPerPage: 10,
+      pathPrefix: '/blog-posts',
       component: path.resolve('src/templates/blog.js')
     });
 
     paginate({
       createPage,
-      items: posts,
-      itemsPerPage: 3,
+      items: reviews,
+      itemsPerPage: 10,
       pathPrefix: '/reviews',
       component: path.resolve('src/templates/reviews.js')
     });
 
     paginate({
       createPage,
-      items: posts,
-      itemsPerPage: 3,
+      items: guides,
+      itemsPerPage: 10,
       pathPrefix: '/guides',
       component: path.resolve('src/templates/guides.js')
     });
     
-    posts.forEach((edge) => {
+    articles.forEach((edge) => {
       const id = edge.node.id
       createPage({
         path: edge.node.fields.slug,
@@ -84,7 +156,7 @@ exports.createPages = ({ actions, graphql }) => {
     // Tag pages:
     let tags = []
     // Iterate through each post, putting all found tags into `tags`
-    posts.forEach((edge) => {
+    articles.forEach((edge) => {
       if (_.get(edge, `node.frontmatter.tags`)) {
         tags = tags.concat(edge.node.frontmatter.tags)
       }

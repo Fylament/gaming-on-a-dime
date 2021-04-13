@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql,StaticQuery } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Pager from '../components/Pager'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
@@ -12,7 +12,6 @@ const Blog = ({data, pageContext}) => {
     return(
         <Layout>
             <FeaturedBlog/>
-            
             <section className="section section--gradient">
               <div className="container">
                 <div className="section">
