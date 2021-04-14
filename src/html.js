@@ -6,6 +6,7 @@ export default function HTML(props) {
     <html {...props.htmlAttributes}>
       <head>
       <script data-ad-client="ca-pub-3422896204686589" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <meta name="google-site-verification" content="UhyhuxTib7XiEzwDBsgvLEcqHAnJzGkgWOjRUTLvVLc" />
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta
