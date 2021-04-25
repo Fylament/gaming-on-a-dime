@@ -93,7 +93,8 @@ collections:
           - {label: "Body", name: "body", widget: "markdown"}
   - name: "requirements"
     label: "Requirements"
-    folder: "src/pages/guides"
+    folder: "src/requirements"
+    create: true
     fields:
       - {label: Title, name: title, widget: string}
       - {label: Image, name: image, widget: image}
