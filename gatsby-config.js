@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Gaming on a Dime',
     description:
-      'This blog contains gaming articles, reviews, guides, and news tailored for budget gaming / low-end gaming',
+      'Gaming articles, reviews, guides, and news for low-end gamers.',
     url: "https://www.gamingonadime.com",
     image: "/img/logo.jpg"
     },

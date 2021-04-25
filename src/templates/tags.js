@@ -2,16 +2,48 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 class TagRoute extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges
     const postLinks = posts.map((post) => (
-      <li key={post.node.fields.slug}>
-        <Link to={post.node.fields.slug}>
-          <h2 className="is-size-2">{post.node.frontmatter.title}</h2>
-        </Link>
-      </li>
+      <div className="" key={post.node.fields.slug}>
+      <article
+        className={`blog-list-item tile is-child box-post  ${
+          post.node.frontmatter.featuredpost ? 'is-featured' : ''
+        }`}
+      >
+        <header>
+          {post.node.frontmatter.featuredimage ? (
+            <div className="featured-thumbnail">
+              <PreviewCompatibleImage
+                imageInfo={{
+                  image: post.node.frontmatter.featuredimage,
+                  alt: `featured image thumbnail for post ${post.node.frontmatter.title}`,
+                }}
+              />
+            </div>
+          ) : null}
+          <p className="post-meta">
+            <Link
+              className="title post-title has-text-primary is-size-5"
+              to={post.node.fields.slug}
+            >
+              {post.node.frontmatter.title}
+            </Link>
+            <div className="post-date">
+              {post.node.frontmatter.date}
+            </div>
+            <div className="post-description">
+              <p>
+                {post.node.frontmatter.description}
+              </p>
+            </div>
+          </p>
+        </header>
+      </article>
+      </div>
     ))
     const tag = this.props.pageContext.tag
     const title = this.props.data.site.siteMetadata.title
@@ -31,7 +63,7 @@ class TagRoute extends React.Component {
                 style={{ marginBottom: '6rem' }}
               >
                 <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
-                <ul className="taglist">{postLinks}</ul>
+                {postLinks}
                 <p>
                   <Link to="/tags/">Browse all tags</Link>
                 </p>
@@ -66,6 +98,17 @@ export const tagPageQuery = graphql`
           }
           frontmatter {
             title
+            description
+            templateKey
+            date(formatString: "MMMM D, YYYY")
+            featuredpost
+            featuredimage {
+              childImageSharp {
+                fluid(quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
