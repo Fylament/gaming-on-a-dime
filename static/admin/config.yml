@@ -91,29 +91,29 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-    - name: "requirements"
-      label: "Requirements"
-      fields:
-        - {label: Title, name: title, widget: string}
-        - {label: Image, name: image, widget: image}
-        - {label: CPUMin, name: CPUMin, widget: string}
-        - {label: CPURec, name: CPUrec, widget: string}
-        - {label: RAMMin, name: RAMMin, widget: string}
-        - {label: RAMRec, name: RAMRec, widget: string}
-        - {label: HDDMin, name: HDDMin, widget: string}
-        - {label: HDDRec, name: HDDRec, widget: string}
-        - {label: VGAMin, name: VGAMin, widget: string}
-        - {label: VGARec, name: VGARec, widget: string}
-        - {label: OSMin, name: OSMin, widget: string}
-        - {label: OSRec, name: OSRec, widget: string}
-        - {label: DXMin, name: DXMin, widget: string}
-        - {label: DXRec, name: DXRec, widget: string}
-        - {label: SCRMin, name: SCRMin, widget: string}
-        - {label: SCRRec, name: SCRRec, widget: string}
-        - {label: NETMin, name: NETMin, widget: string}
-        - {label: NETRec, name: NETRec, widget: string}
-        - {label: SNDMin, name: SNDMin, widget: string}
-        - {label: SNDRec, name: SNDRec, widget: string}
-        - {label: INPMin, name: INPMin, widget: string}
-        - {label: INPRec, name: INPRec, widget: string}
+  - name: "requirements"
+    label: "Requirements"
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Image, name: image, widget: image}
+      - {label: CPUMin, name: CPUMin, widget: string}
+      - {label: CPURec, name: CPUrec, widget: string}
+      - {label: RAMMin, name: RAMMin, widget: string}
+      - {label: RAMRec, name: RAMRec, widget: string}
+      - {label: HDDMin, name: HDDMin, widget: string}
+      - {label: HDDRec, name: HDDRec, widget: string}
+      - {label: VGAMin, name: VGAMin, widget: string}
+      - {label: VGARec, name: VGARec, widget: string}
+      - {label: OSMin, name: OSMin, widget: string}
+      - {label: OSRec, name: OSRec, widget: string}
+      - {label: DXMin, name: DXMin, widget: string}
+      - {label: DXRec, name: DXRec, widget: string}
+      - {label: SCRMin, name: SCRMin, widget: string}
+      - {label: SCRRec, name: SCRRec, widget: string}
+      - {label: NETMin, name: NETMin, widget: string}
+      - {label: NETRec, name: NETRec, widget: string}
+      - {label: SNDMin, name: SNDMin, widget: string}
+      - {label: SNDRec, name: SNDRec, widget: string}
+      - {label: INPMin, name: INPMin, widget: string}
+      - {label: INPRec, name: INPRec, widget: string}
       
