@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import Trending from '../components/Trending'
 
 class TagRoute extends React.Component {
   render() {
@@ -10,13 +11,13 @@ class TagRoute extends React.Component {
     const postLinks = posts.map((post) => (
       <div className="" key={post.node.fields.slug}>
       <article
-        className={`blog-list-item tile is-child box-post  ${
+        className={`blog-list-item tile is-child text-primary text-base mb-4 md:border-b text-content block md:border-secondary md:p-5 mb-10 md:mb-0 sm:pb-5  ${
           post.node.frontmatter.featuredpost ? 'is-featured' : ''
         }`}
       >
-        <header>
+        <header className="grid md:grid-cols-1 lg:grid-cols-2 md:mb-4">
           {post.node.frontmatter.featuredimage ? (
-            <div className="featured-thumbnail">
+            <div className="featured-thumbnail md:col-span-1 md:mr-5 ">
               <PreviewCompatibleImage
                 imageInfo={{
                   image: post.node.frontmatter.featuredimage,
@@ -25,18 +26,18 @@ class TagRoute extends React.Component {
               />
             </div>
           ) : null}
-          <p className="post-meta">
+          <p className="post-meta md:col-span-1 pl-5 pt-2 md:p-0">
             <Link
-              className="title post-title has-text-primary is-size-5"
+              className="title font-oswald text-primary no-underline text-xl md:col-span-1"
               to={post.node.fields.slug}
             >
               {post.node.frontmatter.title}
             </Link>
-            <div className="post-date">
+            <div className="md:col-span-1 text-xs text-content font-open font-medium">
               {post.node.frontmatter.date}
             </div>
-            <div className="post-description">
-              <p>
+            <div className="md:col-span-1 text-content">
+              <p className="mt-4 text-sm font-open">
                 {post.node.frontmatter.description}
               </p>
             </div>
@@ -56,17 +57,19 @@ class TagRoute extends React.Component {
       <Layout>
         <section className="section">
           <Helmet title={`${tag} | ${title}`} />
-          <div className="container content">
-            <div className="columns">
+          <div className="container mx-auto md:px-20 ">
+            <div className="content grid grid-cols-12 ">
               <div
-                className="column is-10 is-offset-1"
-                style={{ marginBottom: '6rem' }}
+                className="lg:col-span-8 col-span-12"
               >
-                <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
+                <h3 className="title text-semibold text-content font-oswald mb-5 md:mb-0 section-label pl-5 mt-4 block ">{tagHeader}</h3>
                 {postLinks}
-                <p>
-                  <Link to="/tags/">Browse all tags</Link>
+                <p className="text-content font-open mt-4 pl-5 md:pl-0 text-sm">
+                  <Link to="/tags/">Browse all tags    ᐅ</Link>
                 </p>
+              </div>
+              <div className="lg:col-span-4 col-span-12">
+                <Trending />
               </div>
             </div>
           </div>

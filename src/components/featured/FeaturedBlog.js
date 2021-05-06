@@ -14,12 +14,13 @@ class FeaturedBlog extends React.Component {
         {posts &&
             posts.map(({ node: post }) => (
               <div className="" key={post.id}>
-                  <div className=" margin-top-0 featured">
-                      <div className="featured-bg">
+                  <div className=" mt-0 featured ">
+                      <div className="md:h-xxl h-80 featured-bg">
                         <BackgroundImage
+                        className="h-full"
                           fluid={post.frontmatter.featuredimage.childImageSharp.fluid}
                         >
-                          <div className="featured-post"
+                          <div className="h-full text-center mx-auto rounded-none "
                               // style={{
                               // display: 'flex',
                               // height: '150px',
@@ -33,7 +34,7 @@ class FeaturedBlog extends React.Component {
                                 to={post.fields.slug}
                               >
                                 <h1
-                                className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-4-widescreen"
+                                className="relative top-2/4 md:top-2/3 font-oswald text-primary px-5 lg:px-0 text-2xl font-bold has-text-weight-bold"
                                 // style={{
                                 //     boxShadow:
                                 //     'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
@@ -47,7 +48,7 @@ class FeaturedBlog extends React.Component {
                                 </h1>
                               </Link>
                               <h3
-                              className="is-size-5-mobile is-size-5-tablet"
+                              className="relative top-2/4 md:top-2/3 font-open text-content text-xs px-5 lg:px-0"
                               // style={{
                               //     boxShadow:
                               //     'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',

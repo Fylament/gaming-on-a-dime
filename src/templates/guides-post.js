@@ -17,30 +17,28 @@ export const GuidesPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-    <section className="section">
+    <section className="section w-full">
       {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1 content-container">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light post-title">
-              {title}
-            </h1>
-            <p>{description}</p>
+      <div className="container my-0 mx-auto lg:px-40 m:px-20 px-7 mt-10">
+          <h1 className="text-post-title font-bold leading-post-title font-oswald text-primary no-underline">
+            {title}
+          </h1>
+          <p className="font-open text-content my-5">{description}</p>
+          <div className="post-content mb-1">
             <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map((tag) => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
           </div>
-        </div>
+          {tags && tags.length ? (
+            <div style={{ marginTop: `4rem` }}>
+              <h4>Tags</h4>
+              <ul className="taglist">
+                {tags.map((tag) => (
+                  <li key={tag + `tag`} className="chip">
+                    <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
       </div>
     </section>
   )

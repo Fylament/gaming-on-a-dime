@@ -9,8 +9,8 @@ class Trending extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-        <div className="sidebar-container is-multiline">
-        <span className="section-label">Trending</span>
+        <div className="sidebar-container mt-10 lg:mt-0 border-t border-secondary md:border-0 pt-10 lg:pt-0">
+        <span className="section-label lg:pl-8 pl-5 italic text-content font-medium font-oswald">Featured</span>
             {posts &&
             posts.map(({ node: post }) => (
               <div className="" key={post.id}>
@@ -19,9 +19,9 @@ class Trending extends React.Component {
                     post.frontmatter.featuredpost ? 'is-featured' : ''
                   }`}
                 >
-                  <div className= "sidebar-post">
+                  <div className= "sidebar-post grid  grid-cols-12 gap-4 pl-5 pt-4 lg:ml-3">
                     {post.frontmatter.featuredimage ? (
-                      <div className="trending-thumbnail">
+                      <div className="trending-thumbnail col-span-4">
                         <PreviewCompatibleImage
                           imageInfo={{
                             image: post.frontmatter.featuredimage,
@@ -30,9 +30,9 @@ class Trending extends React.Component {
                         />
                       </div>
                     ) : null}
-                    <p className="">
+                    <p className="col-span-8">
                       <Link
-                        className="title post-title has-text-primary is-size-5"
+                        className="title font-oswald text-primary no-underline"
                         to={post.fields.slug}
                       >
                         {post.frontmatter.title}
@@ -115,7 +115,7 @@ export default () => (
       query TrendingQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: {  in: ["blog-post", "guides-post", "review-post", "news-post"]} } }
+          filter: { frontmatter: { templateKey: {  in: ["blog-post", "guides-post", "review-post", "news-post"]}, featuredpost: {eq: true}} }
           limit: 6
           ) {
           edges {
@@ -133,7 +133,7 @@ export default () => (
                 featuredpost
                 featuredimage {
                   childImageSharp {
-                    fluid(quality: 100) {
+                    fluid(quality: 100, maxWidth: 400,maxHeight: 400) {
                       ...GatsbyImageSharpFluid
                     }
                   }

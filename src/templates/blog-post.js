@@ -15,34 +15,29 @@ export const BlogPostTemplate = ({
   helmet,
 }) => {
   const PostContent = contentComponent || Content
-
   return (
-    <section className="section">
+    <section className="section w-full">
       {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1 content-container">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light post-title">
-              {title}
-            </h1>
-            <p>{description}</p>
-            <div className="post-content">
-              <PostContent content={content} />
-            </div>
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map((tag) => (
-                    <li key={tag + `tag`} className="chip">
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
+      <div className="container my-0 mx-auto lg:px-40 m:px-20 px-5 mt-10">
+          <h1 className="text-post-title font-bold leading-post-title font-oswald text-primary no-underline">
+            {title}
+          </h1>
+          <p className="font-open text-content my-5">{description}</p>
+          <div className="post-content mb-1">
+            <PostContent content={content} />
           </div>
-        </div>
+          {tags && tags.length ? (
+            <div>
+              <h4 className="text-content font-open text-sm">Tags</h4>
+              <ul className="taglist font-open text-xs">
+                {tags.map((tag) => (
+                  <li key={tag + `tag`} className="my-5">
+                    <Link className="bg-yellow-400 p-1.5 list-none float-left rounded-2xl mr-1" to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
       </div>
     </section>
   )

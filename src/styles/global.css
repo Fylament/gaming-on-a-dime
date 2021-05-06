@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --bg: #000814;
+  --primary: #ffc300;
+}
+
+html {
+  background-color: var(--bg);
+  }
+
+
+/* Utilities */
+
+
+/* Navbar */
+.navbar{
+  background-color: var(--bg);
+}
+
+.navbar-brand{
+  padding-top: 0.4em;
+}
+
+.navbar-start{
+  padding-top: 0.5em;
+}
+
+.navbar-item{
+  color: #fff;
+  font-family: 'Open Sans';
+}
+
+
+/* Featured Post */
+
+.featured{
+}
+
+.featured-bg div {
+  background: -webkit-linear-gradient(transparent, var(--bg)) left repeat;
+  background: linear-gradient(transparent, var(--bg)) left repeat; 
+}
+
+
+
+/* Blog Roll */
+
+.blog-list-item .featured-thumbnail{
+  height: 100%;
+}
+
+
+
+.post-date{
+  font-family: 'open sans';
+  font-size: 0.75rem;
+}
+
+
+.post-meta{
+  width: 80%;
+}
+
+
+
+/* Sidebar */
+
+.sidebar-post{
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, .1);
+}
+
+.trending-thumbnail div{
+  border-radius: 0;
+}
+
+.trending-thumbnail{
+  margin-bottom: 0.75rem;
+}
+
+.sidebar-post p{
+  font-family: 'oswald' !important;
+  font-size: 1rem !important;
+}
+
+
+/* Footer */
+
+.footer-container{
+  background-color: black;
+}
+
+
+
+/* Content */
+
+
+.post-content p{
+  font-family: 'open sans' ;
+  color: #fff ;
+  margin-bottom: 1rem;
+}
+
+
+.post-content ol li{
+  font-family: 'open sans' ;
+  color: #fff ;
+  margin-bottom: 1rem;
+  list-style-type: decimal;
+}
+
+.post-content ul li{
+  font-family: 'open sans' ;
+  color: #fff ;
+  margin-bottom: 1rem;
+  list-style-type: disc;
+}
+
+.post-content code {
+  color: #fff ;
+  margin-bottom: 1rem;
+}
+
+.post-content h2{
+  color: #fff ;
+  font-size: 1.75em;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-family: "oswald";
+}
+
+.post-content blockquote p{
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-size: 1em;
+}
+
+blockquote {
+  background-color: 001d3d;
+  color: #fff;
+  font-size: .8em;
+  line-height: 1.75;
+  padding: 15px 25px;
+  cursor: default;
+  border-left: 5px solid red;
+
+  
+}
+
+
+/* Trending */
+.post-date{
+  color: #fff;
+}
+
+.typewriter-text {
+  display: inline-block;
+  overflow: hidden;
+  letter-spacing: 2px;
+  animation:  blink .75s step-end infinite;
+  white-space: nowrap;
+  border-right: 4px solid orange;
+  box-sizing: border-box;
+}
+
+@keyframes blink {
+  from, to { 
+      border-color: transparent 
+  }
+  50% { 
+      border-color: #fff; 
+  }
+}
+
+
+@layer utilities{
+  @variants hover,focus{
+    .text-404-hover{
+      color:blue;
+      font-family:'Press Start 2P';
+      display: inline-block;
+    }
+    .text-404{
+      color:#fff;
+      font-family:'Press Start 2P';
+      display: inline-block;
+    }
+  }
+}
+
+
+#menu-toggle:checked + #menu{
+  display: block;
+}
+

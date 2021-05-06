@@ -20,13 +20,12 @@ export const IndexPageTemplate = ({
     <SEO/>
     <Featured/>
     <section className="section section--gradient">
-      <div className="container">
-      <h1>This site is under development. All articles provided in this site are fake, placeholder news for development purposes only.</h1>
+      <div className=" container mx-auto lg:px-20 md:px-20">
         <div className="section">
-          <div className="columns">
-            <div className="column is-12 ">
-              <div className="content columns">
-                <div className="column is-8">
+          <div className="grid grid-cols-12">
+            <div className="col-span-12 ">
+              <div className="content grid grid-cols-12">
+                <div className="lg:col-span-8 col-span-12">
                   
                   <BlogRoll />
                   {/* <div className="column is-12 has-text-centered">
@@ -36,7 +35,7 @@ export const IndexPageTemplate = ({
                   </div> */}
                 </div>
  
-                <div className='column is-4'>
+                <div className='lg:col-span-4 col-span-12'>
                   <Trending />
                 </div>
               </div>

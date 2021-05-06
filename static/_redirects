@@ -1,0 +1,8 @@
+# Redirects from what the browser requests to what we serve
+/home              /
+/blog              /blog-posts
+/blogs             /blog-posts
+/guide             /guides
+/review            /reviews
+/about             /
+/contact          /
