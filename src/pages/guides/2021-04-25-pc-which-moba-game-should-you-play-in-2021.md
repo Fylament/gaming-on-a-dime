@@ -5,6 +5,9 @@ date: 2021-04-25T12:41:29.885Z
 description: Exploring the 4 biggest MOBA titles on PC, and which might suit you.
 featuredpost: true
 featuredimage: /img/featured-pc-which-moba-game-should-you-play-in-2021-.png
+tags:
+  - PC
+  - MOBA
 ---
 ![MOBA games character](/img/featured-pc-which-moba-game-should-you-play-in-2021-.png "MOBA games character")
 
