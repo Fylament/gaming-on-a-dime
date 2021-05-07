@@ -97,43 +97,44 @@ html {
 
 /* Content */
 
+.post-content *{
+  margin-bottom: 2rem;
+}
 
 .post-content p{
   font-family: 'open sans' ;
   color: #fff ;
-  margin-bottom: 1rem;
 }
 
 
 .post-content ol li{
   font-family: 'open sans' ;
   color: #fff ;
-  margin-bottom: 1rem;
   list-style-type: decimal;
 }
 
 .post-content ul li{
   font-family: 'open sans' ;
   color: #fff ;
-  margin-bottom: 1rem;
   list-style-type: disc;
 }
 
 .post-content code {
   color: #fff ;
-  margin-bottom: 1rem;
+}
+
+.post-content a {
+  color: var(--primary) ;
 }
 
 .post-content h2{
   color: #fff ;
   font-size: 1.75em;
   font-weight: bold;
-  margin-bottom: 1rem;
   font-family: "oswald";
 }
 
 .post-content blockquote p{
-  margin-bottom: 1rem;
   margin-top: 1rem;
   font-size: 1em;
 }

@@ -135,7 +135,7 @@ export default () => (
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
           limit: 1 
-          filter: { frontmatter: { templateKey: { eq: "blog-post" }, featuredpost: {eq: true} } }
+          filter: { frontmatter: { templateKey: { in: ["blog-post","guides-post","news-post","review-post"] }, featuredpost: {eq: true} } }
         ) {
           edges {
             node {
