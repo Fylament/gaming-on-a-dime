@@ -19,7 +19,7 @@ export const GuidesPostTemplate = ({
   return (
     <section className="section w-full">
       {helmet || ''}
-      <div className="container my-0 mx-auto lg:px-40 m:px-20 px-7 mt-10">
+      <div className="container my-0 mx-auto lg:px-60 m:px-40 px-7 mt-10">
           <h1 className="text-post-title font-bold leading-post-title font-oswald text-primary no-underline">
             {title}
           </h1>
