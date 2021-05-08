@@ -28,12 +28,12 @@ export const GuidesPostTemplate = ({
             <PostContent content={content} />
           </div>
           {tags && tags.length ? (
-            <div style={{ marginTop: `4rem` }}>
-              <h4>Tags</h4>
-              <ul className="taglist">
+            <div>
+              <h4 className="text-content font-open text-sm">Tags</h4>
+              <ul className="taglist font-open text-xs">
                 {tags.map((tag) => (
-                  <li key={tag + `tag`} className="chip">
-                    <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                  <li key={tag + `tag`} className="my-5">
+                    <Link className="bg-yellow-400 p-1.5 list-none float-left rounded-2xl mr-1" to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
                   </li>
                 ))}
               </ul>
