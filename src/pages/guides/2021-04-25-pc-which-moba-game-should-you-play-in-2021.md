@@ -4,12 +4,12 @@ title: (PC) Which MOBA Game Should You Play in 2021?
 date: 2021-04-25T12:41:29.885Z
 description: Exploring the 4 biggest MOBA titles on PC, and which might suit you.
 featuredpost: true
-featuredimage: /img/featured-pc-which-moba-game-should-you-play-in-2021-.png
+featuredimage: /img/featured-pc-which-moba-game-should-you-play-in-2021-.webp
 tags:
   - PC
   - MOBA
 ---
-![MOBA games character](/img/featured-pc-which-moba-game-should-you-play-in-2021-.png "MOBA games character")
+![MOBA games character](/img/featured-pc-which-moba-game-should-you-play-in-2021-.webp "MOBA games character")
 
 The Multiplayer Online Battle Arena genre, or often known as MOBAs, has been drowning in popularity for the past 10 years. As of March 2021 League of Legends alone recorded over 120 million players in a month.  
 
@@ -40,8 +40,6 @@ You might have played one or two MOBAs before, and are looking for new titles to
         Graphics: Version 2.0b capable video card
 
         DirectX: Version 9.0C or better
-
-
 
         Recommended Specification:
         OS: Windows 7, 8.1, or Windows 10
@@ -82,8 +80,6 @@ You might have played one or two MOBAs before, and are looking for new titles to
 
    DirectX: Version 9.0C or better
 
-
-
    Recommended Specification:
 
    OS: 64-bit Windows 7
@@ -97,8 +93,6 @@ You might have played one or two MOBAs before, and are looking for new titles to
    Graphics: NVIDIA GeForce 8600 GTS 512MB / AMD Radeon HD 2600 Pro
 
    DirectX: Version 9.0C or better
-
-
 3. Smite
    Smite is developed and published by Hi-Rez Studios. The game features mythological deities and creatures from different origins.  Smite is well-known for its unique take on MOBA, utilizing a third-person perspective that follows the character being played.  This feature resulted in a completely unique way to experience a MOBA game.
 
@@ -125,8 +119,6 @@ You might have played one or two MOBAs before, and are looking for new titles to
 
    Sound Card: DirectX compatible sound card
 
-
-
    Recommended Specification:
 
    OS: Windows 8/10 64-bit (latest Service Pack)
@@ -140,8 +132,6 @@ You might have played one or two MOBAs before, and are looking for new titles to
    Graphics: Nvidia GeForce GTX 660 or ATI Radeon HD 7950
 
    Sound Card: DirectX compatible sound card
-
-
 4. Heroes of the Storm
    Developed and published by Blizzard Entertainment, Heroes of the Storm features characters from Blizzard’s franchise as playable characters. The general perception of the community believes Heroes of the Storm to be a more casual take of the MOBA genre.
 
@@ -163,8 +153,6 @@ You might have played one or two MOBAs before, and are looking for new titles to
    Storage: 20GB Free Space
 
    Graphics: NVIDIA® GeForce® 8600 GT or ATI Radeon™ HD 4650 or Intel® HD    Graphics 3000
-
-
 
    Recommended Specification:
 
