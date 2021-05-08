@@ -4,7 +4,7 @@ title: "Mechanical Keyboards: Are They Worth it?"
 date: 2021-05-07T10:30:54.852Z
 description: "\"Once you go mech, you can't go back.\""
 featuredpost: true
-featuredimage: /img/20210507mechanicalkeyboardsaretheyworthit.jpg
+featuredimage: /img/20210507mechanicalkeyboardsaretheyworthit.webp
 tags:
   - pc
   - hardware
