@@ -98,12 +98,16 @@ html {
 /* Content */
 
 .post-content *{
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .post-content p{
   font-family: 'open sans' ;
   color: #fff ;
+}
+
+.post-content div blockquote p *{
+  margin-bottom: 0rem !important;
 }
 
 
@@ -119,8 +123,8 @@ html {
   list-style-type: disc;
 }
 
-.post-content code {
-  color: #fff ;
+.post-content blockquote {
+  margin-top: 1rem;
 }
 
 .post-content a {
@@ -135,7 +139,6 @@ html {
 }
 
 .post-content blockquote p{
-  margin-top: 1rem;
   font-size: 1em;
 }
 
@@ -143,7 +146,6 @@ blockquote {
   background-color: 001d3d;
   color: #fff;
   font-size: .8em;
-  line-height: 1.75;
   padding: 15px 25px;
   cursor: default;
   border-left: 5px solid red;
