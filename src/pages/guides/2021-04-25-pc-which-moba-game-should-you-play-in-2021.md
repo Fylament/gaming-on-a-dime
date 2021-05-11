@@ -20,12 +20,12 @@ You might have played one or two MOBAs before, and are looking for new titles to
 1. League of Legends  
       Developed and published by Riot Games, League is currently the title with the most player base. Built as a stand-alone game inspired by the Defense of the Ancients mod for Warcraft 3, League offers the similar premise of five players facing each other to push through and destroy the opposing team’s “Nexus”.
 
-   * A large playable character pool consisting of 155 champions (April 2021)
-   * Free champion rotation that cycles weekly
-   * Largest player base, with 115 million average monthly players in 2021
-   * Average Game can last around 15-45 minutes
-   * Frequent patches. Around 3-5 new champions get released each year.
-   * Champions need to be unlocked first using Riot Points or Blue Essence
+      * A large playable character pool consisting of 155 champions (April 2021)
+      * Free champion rotation that cycles weekly
+      * Largest player base, with 115 million average monthly players in 2021
+      * Average Game can last around 15-45 minutes
+      * Frequent patches. Around 3-5 new champions get released each year.
+      * Champions need to be unlocked first using Riot Points or Blue Essence
 
 
 
@@ -48,14 +48,14 @@ You might have played one or two MOBAs before, and are looking for new titles to
 2. DotA 2  
    A direct sequel from the original Defense of the Ancients mod for Warcraft 3. DotA 2 is a faithful continuation of the series developed by Valve. The game features a completely free-to-play model, with all heroes unlocked from the start of the game. It is known to have a steeper learning curve compared to other titles. DotA 2 is also known for having the largest tournament prize pool out of any other games.
 
-   * Features 121 heroes (April 2021)
-   * All hero is unlocked from the start of the game
-   * 400 thousand average monthly players in 2021
-   * Cosmetic items are divided into parts, allowing you to mix and match and purchase certain parts only
-   * Faithful to the original game of DotA, retaining most of the heroes and mechanics
-   * Average Game can last around 20-60 minutes 
-   * Complex mechanics, higher learning curve than other titles
-   * Frequent balance patches, but with no big changes on the gameplay. Less frequent hero releases compared to other titles.
+      * Features 121 heroes (April 2021)
+      * All hero is unlocked from the start of the game
+      * 400 thousand average monthly players in 2021
+      * Cosmetic items are divided into parts, allowing you to mix and match and purchase certain parts only
+      * Faithful to the original game of DotA, retaining most of the heroes and mechanics
+      * Average Game can last around 20-60 minutes 
+      * Complex mechanics, higher learning curve than other titles
+      * Frequent balance patches, but with no big changes on the gameplay. Less frequent hero releases compared to other titles.
 
    > **Minimum Requirements:**  
    > OS: Windows 7 or better  
@@ -76,14 +76,14 @@ You might have played one or two MOBAs before, and are looking for new titles to
 3. Smite  
    Smite is developed and published by Hi-Rez Studios. The game features mythological deities and creatures from different origins.  Smite is well-known for its unique take on MOBA, utilizing a third-person perspective that follows the character being played.  This feature resulted in a completely unique way to experience a MOBA game.
 
-   * Features 114 gods (April 2021)
-   * 15 thousand average monthly players in 2021
-   * Average Game can last around 20-35 minutes
-   * Unique third-person perspective instead of the usual top-down, isometric view
-   * A lot of abilities require aiming
-   * Also available for Playstation 4, Nintendo Switch, and Xbox One
-   * Playable characters are based on deities, creatures, and heroes from mythologies
-   * Frequent patches featuring new skins and new gods. Around 5-10 new gods get released each year.
+      * Features 114 gods (April 2021)
+      * 15 thousand average monthly players in 2021
+      * Average Game can last around 20-35 minutes
+      * Unique third-person perspective instead of the usual top-down, isometric view
+      * A lot of abilities require aiming
+      * Also available for Playstation 4, Nintendo Switch, and Xbox One
+      * Playable characters are based on deities, creatures, and heroes from mythologies
+      * Frequent patches featuring new skins and new gods. Around 5-10 new gods get released each year.
 
    > **Minimum Requirements:**  
    > OS: Windows 7 64-bit or newer  
@@ -104,12 +104,12 @@ You might have played one or two MOBAs before, and are looking for new titles to
 4. Heroes of the Storm  
    Developed and published by Blizzard Entertainment, Heroes of the Storm features characters from Blizzard’s franchise as playable characters. The general perception of the community believes Heroes of the Storm to be a more casual take of the MOBA genre.
 
-   * Features 90 heroes (April 2021)
-   * Smaller active player base. 
-   * Average Game can last around 15-20 minutes
-   * Often perceived to be more casual compared to other titles
-   * Playable characters are characters from Blizzard Franchise, including Overwatch, Warcraft, Starcraft, Diablo, several classic Blizzard games, and original heroes from the game.
-   * Frequent patches, with around 2-10+ heroes get released each year.
+      * Features 90 heroes (April 2021)
+      * Smaller active player base. 
+      * Average Game can last around 15-20 minutes
+      * Often perceived to be more casual compared to other titles
+      * Playable characters are characters from Blizzard Franchise, including Overwatch, Warcraft, Starcraft, Diablo, several classic Blizzard games, and original heroes from the game.
+      * Frequent patches, with around 2-10+ heroes get released each year.
 
    > **Minimum Requirements**  
    > OS: Windows 10 64-bit or newer  
