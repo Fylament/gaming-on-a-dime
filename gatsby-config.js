@@ -37,6 +37,17 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: "gatsby-remark-embed-video",
+              options: {
+                  width: 800,
+                  ratio: 1.77, 
+                  height: 400, 
+                  related: false,
+                  noIframeBorder: true
+              },
+          },
+          `gatsby-remark-responsive-iframe`,
+          {
             resolve: 'gatsby-remark-relative-images',
             options: {
               name: 'uploads',
@@ -112,11 +123,11 @@ module.exports = {
       },
     },
     {
-        resolve: `gatsby-plugin-postcss`,
-        options: {
-            postCssPlugins: [require("tailwindcss")],
-            },
-        },
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [require("tailwindcss")],
+      },
+    },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }
