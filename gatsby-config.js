@@ -4,7 +4,7 @@ module.exports = {
     description:
       'Gaming articles, reviews, guides, and news for low-end gamers.',
     url: "https://www.gamingonadime.com",
-    image: "/img/logo.jpg"
+    image: "/img/meta_image.jpg"
     },
   plugins: [
     'gatsby-plugin-react-helmet',
