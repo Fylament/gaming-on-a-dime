@@ -3,7 +3,7 @@ templateKey: news-post
 title: "Epic Games Free Week: The Lion's Song"
 date: 2021-05-12T10:30:31.533Z
 description: Mi'pu'mi Games' narrative adventure is coming to Epic Games this Thursday.
-featuredpost: false
+featuredpost: true
 featuredimage: /img/the_lions_song_ep4_screenshot_01.png
 tags:
   - PC
