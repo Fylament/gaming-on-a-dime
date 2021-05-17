@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
-import addToMailchimp from 'gatsby-plugin-mailchimp'
 import BackgroundImage from 'gatsby-background-image'
 
 class Landing extends React.Component {
@@ -11,11 +10,6 @@ class Landing extends React.Component {
 
   handleSubmit = e => {
         e.preventDefault();
-        addToMailchimp(this.state.email) // listFields are optional if you are only capturing the email address.
-        .then(data => {
-        })
-        .catch(() => {
-        })
         document.getElementById("subscribe-button").disabled = true; 
         document.getElementById("subscribe-button").innerHTML = "Thanks!";
   }
