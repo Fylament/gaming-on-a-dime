@@ -16,4 +16,6 @@ tags:
 
 This release includes the F1 2019 base games, as well as the Legends Edition DLC featuring Ayrton Senna and Alain Prost.
 
-F1 2019 is the official videogame of the 2019 FIA Formula One World Championship. This release features official teams, drivers, and circuits from the 2019 season. 
+F1 2019 is the official videogame of the 2019 FIA Formula One World Championship. This release features official teams, drivers, and circuits from the 2019 season.  
+
+[Click here to visit the offer page.](https://www.fanatical.com/en/game/f-1-2019-legends-edition?v=3205)
