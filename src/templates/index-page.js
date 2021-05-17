@@ -7,6 +7,7 @@ import BlogRoll from '../components/BlogRoll'
 import Featured from '../components/featured/Featured'
 import Trending from '../components/Trending'
 import SEO from '../components/seo'
+import Landing from '../components/Landing'
 
 export const IndexPageTemplate = ({
   title,
@@ -17,7 +18,7 @@ export const IndexPageTemplate = ({
   
   <div>
     <SEO/>
-    <Featured/>
+    <Landing/>
     <section className="section section--gradient">
       <div className=" container mx-auto lg:px-20 md:px-20">
         <div className="section">

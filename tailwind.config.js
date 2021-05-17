@@ -17,6 +17,10 @@ module.exports = {
       '7xl': '5rem',
       'post-title': '2.5rem',
     },
+    backgroundColor: theme => ({
+      ...theme('colors'),
+      'primary': '#ffc300',
+     }),
     borderColor: theme => ({
       ...theme('colors'),
       'primary': '#ffc300',
@@ -64,7 +68,12 @@ module.exports = {
     }
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundColor: ['disabled'],
+      transitionDuration: ['disabled'],
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }

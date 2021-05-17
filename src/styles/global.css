@@ -41,10 +41,13 @@ html {
 }
 
 .featured-bg div {
-  background: -webkit-linear-gradient(transparent, var(--bg)) left repeat;
-  background: linear-gradient(transparent, var(--bg)) left repeat; 
+  background: -webkit-linear-gradient(transparent, var(--bg)) left;
+  background: linear-gradient(transparent, var(--bg)) left; 
 }
 
+.landing-bg div {
+  background: -webkit-linear-gradient(rgba(0, 8, 20, 0.3), var(--bg)) left;
+}
 
 
 /* Blog Roll */
