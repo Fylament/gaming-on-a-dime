@@ -1,27 +1,37 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
+import addToMailchimp from 'gatsby-plugin-mailchimp'
 import BackgroundImage from 'gatsby-background-image'
 
 class Landing extends React.Component {
-  // state = {
-  //   email:"",
-  // }   
+  constructor(props) {
+    super(props)
+    this.state = {
+      active: false,
+      navBarActiveClass: '',
+    }
+  }
 
-  // handleSubmit = e => {
-  //       e.preventDefault();
-  //       document.getElementById("subscribe-button").disabled = true; 
-  //       document.getElementById("subscribe-button").innerHTML = "Thanks!";
-  // }
+  handleSubmit = e => {
+        e.preventDefault();
+        addToMailchimp(this.state.email) // listFields are optional if you are only capturing the email address.
+        .then(data => {
+        })
+        .catch(() => {
+        })
+        document.getElementById("subscribe-button").disabled = true; 
+        document.getElementById("subscribe-button").innerHTML = "Thanks!";
+  }
 
-  // handleInputChange = event => {
-  //   const target = event.target
-  //   const value = target.value
-  //   const name = target.name
-  //   this.setState({
-  //     [name]: value,
-  //   })
-  // }
+  handleInputChange = event => {
+    const target = event.target
+    const value = target.value
+    const name = target.name
+    this.setState({
+      [name]: value,
+    })
+  }
 
 
   render() {
@@ -76,14 +86,14 @@ class Landing extends React.Component {
                               We curate free/discounted game offers from multiple sources so you can play your favorite titles on a deal!<br></br>
                               Subscribe to receive new offers every week.
                               </h3>
-                              {/* <form onSubmit={this.handleSubmit} className="relative top-1/4 md:top-1/4 subscribe-form w-full mx-auto text-center mt-10">
+                              <form onSubmit={this.handleSubmit} className="relative top-1/4 md:top-1/4 subscribe-form w-full mx-auto text-center mt-10">
                                 
                                 <input type="text" id="email" name="email" placeholder="Your Email"
                                 value={this.state.email}
                                 onChange={this.handleInputChange} 
                                 className="subscribe-input rounded-md font-open h-10 w-1/2 "/>
                                 <button type="submit"  className="font-oswald rounded-md bg-primary h-10 px-3 disabled:bg-gray-500 disabled:duration-1000 ml-4" id="subscribe-button">Subscribe</button>
-                              </form> */}
+                              </form>
                               <h3
                               className="relative top-1/3 md:top-1/4 font-open text-content lg:text-xs text-xs  px-5 lg:px-0"
                               // style={{
