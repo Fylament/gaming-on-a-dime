@@ -9,7 +9,7 @@ class Landing extends React.Component {
     email:"",
   }   
 
-  _handleSubmit = e => {
+  handleSubmit = e => {
         e.preventDefault();
         addToMailchimp(this.state.email) // listFields are optional if you are only capturing the email address.
         .then(data => {
@@ -20,7 +20,7 @@ class Landing extends React.Component {
         document.getElementById("subscribe-button").innerHTML = "Thanks!";
   }
 
-  _handleInputChange = event => {
+  handleInputChange = event => {
     const target = event.target
     const value = target.value
     const name = target.name
@@ -82,11 +82,11 @@ class Landing extends React.Component {
                               We curate free/discounted game offers from multiple sources so you can play your favorite titles on a deal!<br></br>
                               Subscribe to receive new offers every week.
                               </h3>
-                              <form onSubmit={this._handleSubmit} className="relative top-1/4 md:top-1/4 subscribe-form w-full mx-auto text-center mt-10">
+                              <form onSubmit={this.handleSubmit} className="relative top-1/4 md:top-1/4 subscribe-form w-full mx-auto text-center mt-10">
                                 
                                 <input type="text" id="email" name="email" placeholder="Your Email"
                                 value={this.state.email}
-                                onChange={this._handleInputChange} 
+                                onChange={this.handleInputChange} 
                                 className="subscribe-input rounded-md font-open h-10 w-1/2 "/>
                                 <button type="submit"  className="font-oswald rounded-md bg-primary h-10 px-3 disabled:bg-gray-500 disabled:duration-1000 ml-4" id="subscribe-button">Subscribe</button>
                               </form>
