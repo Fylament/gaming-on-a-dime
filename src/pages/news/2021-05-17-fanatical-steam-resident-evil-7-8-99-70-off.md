@@ -17,4 +17,4 @@ The Steam version for Resident Evil 7 is on 70% off until May 23rd.
 
 You follow Ethan Winters on his search of his missing wife, where he got kidnapped and tortured by a family of murderous cannibals known as the Bakers. Resident Evil 7 promised more horror, as the new first-person perspective renders exploration to be a much more terrifying experience.  
 
-Click here to visit the offer page.
+[Click here to visit the offer page.](https://www.fanatical.com/en/game/resident-evil-7-biohazard)
